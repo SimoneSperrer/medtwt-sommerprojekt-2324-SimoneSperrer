@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurse</title>
+    <script src="../data/data.js" defer></script>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../javascript/forAllScript.js" defer></script>
+    <script src="../javascript/mainScript.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+    <header id="header">
+        <h1><span>K</span>URSE</h1>
+    </header>
+    <div id="currentSide_Kurse" class="current_Side"></div>
+    <nav>
+        <div class="navitem" onclick="window.location.href='../index.html'"><img id="homePNG" src="../img/home.png"><p>Home</p></div>
+        <div class="navitem"><p>Unsere Kurse</p></div>
+        <div class="navitem" onclick="window.location.href='./atemuebungen.html'"><p>Atemübungen</p></div>
+        <div class="navitem" onclick="window.location.href='./aboutUs.html'"><p>About Us</p></div>
+    </nav>
+
+    <img id="modeSwitch" src="./img/dark.png" alt="modeSwitch" onclick="changeTheme()">
+
+
+
+
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper" id="swiper-wrapper-id"></div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <div id="box_yogaItems"></div>
+
+
+
+
+
+
+
+    <footer>
+        <h5>CHECK US OUT</h5>
+        <div id="socialMedia_Icons">
+            <div class="icon"><img src="../img/Instagram_icon.png" alt="Insta"></div>
+            <div class="icon"><img src="../img/Facebook_icon.png" alt="facebook"></div>
+            <div class="icon"><img src="../img/Pinterest_icon.png" alt="pinterest"></div>
+            <div class="icon"><img src="../img/Twitter_icon.png" alt="twitter"></div>
+        </div>
+        <div id="websiteInformation">
+            <div class="differentInfos"><p>Impressum</p></div>
+            <div class="differentInfos"><p>Contact Us</p></div>
+            <div class="differentInfos"><p>Get Help</p></div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atemübungen</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../javascript/atemuebungScript.js" defer></script>
+    <script src="../javascript/forAllScript.js" defer></script>
+</head>
+<body>
+<header id="header">
+    <h1><span>A</span>TEMÜBUNGEN</h1>
+</header>
+<div id="currentSide_Atemuebngen" class="current_Side"></div>
+<nav>
+    <div class="navitem" onclick="window.location.href='../index.html'"><img id="homePNG" src="../img/home.png"><p>Home</p></div>
+    <div class="navitem"onclick="window.location.href='./kurse.html'"><p>Unsere Kurse</p></div>
+    <div class="navitem"><p>Atemübungen</p></div>
+    <div class="navitem" onclick="window.location.href='./aboutUs.html'"><p>About Us</p></div>
+</nav>
+
+<img id="modeSwitch" src="./img/dark.png" alt="modeSwitch" onclick="changeTheme()">
+
+    <div class="exercise_display">
+        <div id="circle">
+            <img id="atemuebungenImgTag" src="../img/playButton.png" alt="START" onclick="startUebung()">
+
+        </div>
+        <div class="instructions">
+            <span id="breatheOut">Breathe out: 3s</span>
+            <span id="hold">Hold: 3s</span>
+            <span id="breatheIn">Breathe in: 3s</span>
+        </div>
+    </div>
+    <div class="other-exercises">
+        <h3><span>Versuche andere Übungen:</span></h3>
+        <div class="exercise-options">
+            <div class="exercise" id="exercise1" onclick="newTimes(10,3,8)">
+                <h6>Exercise <span>1</span></h6>
+                <p><span>Breathe in: </span>10s</p>
+                <p><span>Hold: </span>3s</p>
+                <p><span>Breathe out: </span>8s</p>
+            </div>
+            <div class="customize">
+                <h6><span>Customize</span></h6>
+                <input type="number" id="customIn" placeholder="Breathe in seconds" min="0">
+                <input type="number" id="customHold" placeholder="Hold in seconds" min="0">
+                <input type="number" id="customOut" placeholder="Breathe out seconds" min="0">
+                <button id="customButton"  onclick="newTimes(-1,-1,-1)">Commit</button>
+            </div>
+            <div class="exercise" id="exercise2" onclick="newTimes(7,5,10)">
+                <h6>Exercise <span>2</span></h6>
+                <p><span>Breathe in: </span>7s</p>
+                <p><span>Hold: </span>5s</p>
+                <p><span>Breathe out: </span>10s</p>
+            </div>
+        </div>
+    </div>
+
+
+<footer>
+    <h5>CHECK US OUT</h5>
+    <div id="socialMedia_Icons">
+        <div class="icon"><img src="../img/Instagram_icon.png" alt="Insta"></div>
+        <div class="icon"><img src="../img/Facebook_icon.png" alt="facebook"></div>
+        <div class="icon"><img src="../img/Pinterest_icon.png" alt="pinterest"></div>
+        <div class="icon"><img src="../img/Twitter_icon.png" alt="twitter"></div>
+    </div>
+    <div id="websiteInformation">
+        <div class="differentInfos"><p>Impressum</p></div>
+        <div class="differentInfos"><p>Contact Us</p></div>
+        <div class="differentInfos"><p>Get Help</p></div>
+    </div>
+</footer>
+</body>
+</html>

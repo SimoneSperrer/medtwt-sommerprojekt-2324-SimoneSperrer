@@ -1,0 +1,957 @@
+@import url('https://fonts.cdnfonts.com/css/identidad');
+
+:root {
+    --text: #080708;
+    --background: #fff9f5;
+    --primary: #383C53;
+    --primaryForHome: rgba(56, 60, 83, 0.75);
+    --secondary: #cbafaa;
+    --accent: #e5d2cd;
+    --white: #fff;
+    --black: #000;
+}
+/*:root {
+    --text: #fff;
+    --background: #fff9f5;
+    --primary: #383C53;
+    --primaryForHome: rgba(56, 60, 83, 0.75);
+    --secondary: #402b42;
+    --accent: #796576;
+    --white: #fff;
+    --black: #fff;
+}*/
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Identidad', sans-serif;;
+    font-weight: lighter;
+    background-color: var(--background);
+    color: var(--black);
+    transition: 1s;
+}
+
+/******* INDEX SIDE HEADER *******/
+#index_htmlSide {
+    margin: 0;
+    width: 100vw;
+    min-height: 100vh;
+    height: auto;
+    background-image: url("../img/hintergrund.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#index_htmlSide > header {
+    margin: 0;
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/******* SCHRIFTGRÖßEN *******/
+h1 {
+    font-family: 'Identidad', sans-serif;
+    font-size: 110px;
+    font-weight: lighter;
+    margin: 0;
+}
+h1 > span {
+    font-weight: bold;
+    color: var(--primary);
+    text-shadow: 0px 0px 15px var(--black);
+}
+h2 {
+    font-family: 'Identidad', sans-serif;
+    font-size: 70px;
+    font-weight: lighter;
+    margin: 0;
+}
+h2 > span {
+    font-weight: bold;
+    color: var(--primary);
+    text-shadow: 0px 0px 15px var(--black);
+}
+h3 {
+    font-family: 'Identidad', sans-serif;
+    font-size: 40px;
+    font-weight: lighter;
+    margin: 0;
+}
+h3 > span {
+    font-weight: bold;
+    color: var(--primary);
+    text-shadow: 0px 0px 15px var(--black);
+}
+h4 {
+    font-family: 'Identidad', sans-serif;
+    font-size: 45px;
+    font-weight: lighter;
+    margin: 0;
+}
+h4 > span {
+    font-weight: bold;
+    color: var(--primary);
+    text-shadow: 0px 0px 15px var(--black);
+}
+h5 {
+    font-family: 'Identidad', sans-serif;
+    font-weight: lighter;
+    color: var(--white);
+    text-align: center;
+    margin-top: 4vh;
+}
+h6 {
+    font-family: 'Identidad', sans-serif;
+    font-size: 30px;
+    font-weight: lighter;
+    margin: 0;
+}
+h6 > span {
+    font-weight: bold;
+    color: var(--primary);
+    text-shadow: 0px 0px 15px var(--black);
+}
+/******* HEADER *******/
+header {
+    margin: 0;
+    width: 100vw;
+    height: 30vh;
+    background-image: url("../img/hintergrund.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent);
+}
+nav {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    position: absolute;
+    top: 22.5vh;
+    margin: auto;
+}
+.navitem {
+    width: 10vw;
+    padding-top: 1.2vw;
+    padding-bottom: 1.2vw;
+    margin: 1vw;
+    background-color: var(--secondary);
+    text-align: center;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    transition: 1s;
+}
+.navitem:hover {
+    cursor: pointer;
+    background-color: var(--accent);
+}
+.navitem > img {
+    width: 2vw;
+}
+.current_Side {
+    width: 10vw;
+    height: 1vh;
+    background-color: var(--primary);
+    position: absolute;
+    top: 35.5vh;
+    z-index: 20;
+
+}
+#currentSide_Home {
+    left: 27vw;
+}
+#currentSide_Kurse {
+    left: 39vw;
+}
+#currentSide_Atemuebngen {
+    left: 51vw;
+}
+#currentSide_AboutUs {
+    left: 63vw;
+}
+/******* MODE SWITCH *******/
+#modeSwitch {
+    filter: drop-shadow(0px 0px 20px var(--background));
+    position: fixed;
+    right: 5vh;
+    top: 5vh;
+    width: 5vh;
+    transition: 1s;
+    z-index: 1000;
+}
+#modeSwitch:hover {
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 20px var(--primary));
+}
+
+/******* FOOTER ******/
+footer {
+    padding-top: 3vh;
+    margin-top: 5vh;
+    width: 100vw;
+    height: 25vh;
+    background-color: var(--primary);
+    position: relative;
+    bottom: 0;
+}
+#socialMedia_Icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.icon > img {
+    margin: 1vw;
+    width: 2.5vw;
+}
+.icon > img:hover{
+    cursor: pointer;
+}
+#websiteInformation {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.differentInfos {
+    width: 20vw;
+    color: var(--white);
+    text-align: center;
+}
+.differentInfos {
+    cursor: pointer;
+}
+/******* KURS.HTML *******/
+
+/******* SLIDESHOW *******/
+.swiper {
+    width: 100vw;
+    height: 80vh;
+    margin-top: 10vh;
+
+    background-color: var(--secondary);
+
+}
+.swiper-wrapper {
+    display: flex;
+}
+.swiper-slide {
+    /*padding: 2vw;*/
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+.swiper-slide-box {
+    height: 60vh;
+    width: 50vh;
+    background-color: var(--accent);
+    padding: 2vw;
+    margin: 5vh auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+.swiper-slide > .swiper-slide-box > img {
+    width: 45vh;
+    height: 45vh;
+    margin: 1.5vw 5%;
+    transition: 1s;
+}
+.swiper-slide > img:hover {
+    cursor: pointer;
+}
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--primary) !important;
+}
+.swiper-pagination-bullet-active {
+    background-color: var(--primary) !important;
+}
+.swiper-pagination-bullet {
+    background-color: rgba(24,96,73, 0.5);
+}
+#kurs_Slideshow {
+    width: 100vw;
+    margin-top: 10vh;
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.slideshow_stars {
+    display: flex;
+    flex-direction: row;
+
+
+}
+.star {
+    background-color: var(--primary);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    width: 2vw;
+    height: 2vw;
+    margin: 0.5vw;
+}
+#AloYogaStar5{
+    background-color: var(--secondary);
+
+}
+
+/******* YOGA BOX *******/
+#box_yogaItems{
+    margin-top: 3vw;
+}
+.yogaBox {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    width: 100vw;
+    margin-top: 3vw;
+    background-color: var(--accent);
+}
+.yogaBox_left {
+    width:30%;
+    padding: 2.5%;
+    padding-top: 0;
+    margin-left: 2vw;
+}
+.yogaBox_right {
+    width: 50%;
+    padding: 2.5%;
+    margin-left: 2vw;
+    padding-top: 0;
+}
+.yogaBox_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 0;
+    margin-bottom: 1.5vw;
+    margin-top: 2vw;
+}
+.yogaBox_body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10%;
+    width: 80%;
+
+    background-color: var(--secondary);
+}
+.yogaBox_body > img {
+    width: 100%;
+}
+.yogaBox_booking {
+    width: 90%;
+    text-align: center;
+    padding: 5%;
+    margin-top: 1vw;
+    background-color: var(--primary);
+    color: var(--background);
+    font-family: 'Identidad', sans-serif;
+    font-size: 20px;
+    letter-spacing: 10px;
+    font-weight: lighter;
+}
+.yogaBox_stars {
+    display: flex;
+    flex-direction: row;
+}
+.yogaBox_stars > .star {
+    width: 4vw;
+    height: 4vw;
+}
+.yogaBox_text{
+    width: 100%;
+    margin: 2.5%;
+    font-size: 25px;
+}
+.yogaBox_text > p > span{
+    color: var(--primary);
+    font-weight: bold;
+}
+
+/******* BOOKING BOX *******/
+#booking_content {
+    margin-top: 10vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr 0.7fr;
+    grid-template-rows: 1fr 1fr 1.3fr 0.7fr 2fr 0.7fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    height: 190vh;
+}
+
+.booking_infoText {
+    grid-area: 1 / 2 / 4 / 4;
+    background-color: var(--accent);
+    margin: 1vw;
+    font-size: 30px;
+    padding: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.booking_infoText > p {
+    margin: 0;
+}
+.booking_infoText > p > span{
+    color: var(--primary);
+    font-weight: bold;
+}
+.booking_stars {
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: var(--accent);
+    margin: 1vw;
+    padding: 2vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.booking_bookALesson {
+    grid-area: 2 / 1 / 7 / 2;
+    background-color: var(--secondary);
+    margin: 1vw;
+}
+.booking_bewertung {
+    grid-area: 4 / 2 / 7 / 4;
+    background-color: var(--secondary);
+    margin: 1vw;
+    padding: 3vw;
+}
+.booking_bewertung > p {
+    font-size: 30px;
+}
+.booking_chooseDay {
+    grid-area: 2 / 1 / 4 / 2;
+    margin: 1vw;
+    padding: 2vw;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.align_radios_booking_choose{
+    padding-top: 8vh;
+}
+.radios_booking_choose {
+    vertical-align: middle;
+    margin: 5vh;
+    margin-left: 1vh;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 30px;
+    width: 30px;
+    border: 2px solid var(--accent);
+    border-radius: 50%;
+    vertical-align: middle;
+    background-color: var(--secondary);
+}
+input[type="radio"]:checked {
+    background-color: var(--accent);
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="6" fill="white"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.booking_chooseTime {
+    grid-area: 4 / 1 / 6 / 2;
+    margin: 1vw;
+    padding: 2vw;
+
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.booking_commitNewLesson {
+    grid-area: 6 / 1 / 7 / 2;
+}
+.booking_commitBewertung {
+    grid-area: 6 / 2 / 7 / 4;
+
+}
+.booking_commitBewertung, .booking_commitNewLesson{
+    margin: 4vw;
+    margin-top: 2vw;
+    text-align: center;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    background-color: var(--primary);
+    cursor: pointer;
+    transition: all 1s;
+}
+.booking_commitBewertung:hover, .booking_commitNewLesson:hover {
+    box-shadow: 0px 0px 15px 5px var(--white);
+}
+.booking_bewertungsBox {
+    grid-area: 5 / 2 / 6 / 4;
+    margin: 4vw;
+    margin-top: 20vh;
+}
+.booking_bewertungsBox > textarea{
+    background-color: var(--accent);
+    border: var(--accent) 2px solid;
+}
+#text {
+    width: 90%;
+    margin-top: 1vh;
+}
+.booking_bewertungsBox > textarea:focus {
+    outline: var(--white) 5px dotted;
+}
+#booking_detailOverlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1000;
+}
+#booking_detailOverlay_detailBox {
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--secondary);
+    box-shadow: 3px 3px 30px rgb(60, 60, 60) ;
+    margin: 2vw;
+    padding: 3vh;
+    padding-bottom: 5vh;
+    transition: all 1s;
+    font-size: 30px;
+}
+#booking_detailOverlay_detailBox > div{
+    margin-top: 1vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+#booking_detailOverlay_detailBox > div > input{
+    font-family: 'Identidad', sans-serif;
+    margin: 2vh;
+    padding: 1vh;
+    border-radius: 0;
+    background-color: var(--secondary);
+    border: var(--accent) 2px solid;
+    font-size: 25px;
+    color: var(--white);
+}
+#booking_detailOverlay_detailBox > div > input:focus{
+    outline: var(--accent) 5px solid;
+}
+.radios_booking_remember{
+    margin: 1vh;
+}
+#booking_detailOverlay_detailBox_SubmitButton {
+    width: 70%;
+    height: 100%;
+    padding: 2vh;
+    text-align: center;
+    color: var(--white);
+    font-size: 20px;
+    background-color: var(--primary);
+    cursor: pointer;
+    transition: all 1s;
+    border: var(--primary) 2px solid;
+}
+
+/******* REMEMBER BOX HOME SEITE *******/
+#rememberBox {
+    background-color: var(--primaryForHome);
+    color: var(--white);
+    width: 42vw;
+    margin: auto;
+    margin-top: 10vh;
+    padding: 1vw;
+}
+.personalRememberBox {
+    border: var(--white) 2px solid;
+    padding: 1vw;
+    margin: 1vw;
+    font-size: 17px;
+}
+.buttonToDeleteYogaClass {
+    padding: 1vh;
+    display: inline-block;
+    border: var(--primary) solid 2px;
+    color: var(--primary);
+    background-color: var(--background);
+    font-weight: bold;
+    text-align: center;
+}
+
+#taskLoeschenOverlay {
+    background-color: var(--primary);
+    color: var(--white);
+    width: 40vw;
+    margin: auto;
+    margin-top: 10vh;
+    padding: 2vw;
+    position: absolute;
+    position: fixed;
+    top: 32vh;
+    left: 28vw;
+    display: none;
+}
+#taskLoeschenOverlay > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.chooseButton_IndexSide {
+    margin: 1vw;
+    padding: 1vh;
+    width: 10%;
+    border: var(--primary) solid 2px;
+    color: var(--primary);
+    background-color: var(--background);
+    font-weight: bold;
+    text-align: center;
+}
+#chooseButton_IndexSide_nein {
+    background-color: var(--secondary);
+}
+.chooseButton_IndexSide:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    outline: var(--secondary) solid 5px;
+}
+
+.informationsContainer_AboutUs {
+    width: 80vw;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 10vh;
+    font-size: 20px;
+    color: #000;
+}
+.informationsContainer_AboutUs > h2{
+    color: #000;
+}
+section {
+    padding: 20px;
+    border: solid var(--secondary) 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+strong{
+    font-weight: bold;
+}
+ul li {
+    background: var(--secondary);
+    color: var(--black);
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+/******* ATEMÜBUNG *******/
+.exercise_display {
+    background-color: var(--secondary);
+    border-radius: 20px;
+    width: 80vw;
+    padding: 1vw;
+    padding-bottom: 8vh;
+    margin: 10vh auto 10vh;
+}
+#circle {
+    border: solid 5px var(--secondary);
+    background-color: var(--white);
+    border-radius: 50%;
+    width: 10vw;
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh auto 8vh;
+}
+#atemuebungenImgTag {
+    cursor: pointer;
+    width: 7vw;
+    transition: 0.5s;
+}
+#atemuebungenImgTag:hover {
+    cursor: pointer;
+    width: 7.5vw;
+}
+.instructions {
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+}
+.other-exercises {
+    width: 80vw;
+    padding: 1vw;
+    margin: auto;
+    text-align: center;
+}
+.exercise-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5vh;
+    align-items: center;
+    align-content: center;
+}
+.exercise, .customize {
+    background-color: var(--accent);
+    border-radius: 20px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.exercise>p>span, .customize>p>span{
+
+    font-weight: bold;
+    color: var(--primary);
+}
+.customize input {
+    display: block;
+    margin: 1vh auto;
+    padding: 0.5vw;
+    width: 80%;
+    border-radius: 10px;
+    border: 1px solid var(--primary);
+    font-size: 14px;
+}
+.customize > input:focus{
+    outline: var(--primary) 2px solid;
+}
+.customize button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 1vh;
+    width: 80%;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#toSmall {
+    width: 100vw;
+    height: 70vh;
+    top: 40vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--primary);
+    position: fixed;
+}
+
+#alert {
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1000;
+    color: white;
+}
+#alert >p {
+    font-size: 35px;
+
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 770px) and (max-width: 1505px) {
+    .navitem {
+        width: 17vw;
+    }
+    .current_Side {
+        width: 17vw;
+    }
+    #currentSide_Home {
+        left: 13vw;
+    }
+    #currentSide_Kurse {
+        left: 32vw;
+    }
+    #currentSide_Atemuebngen {
+        left: 51vw;
+    }
+    #currentSide_AboutUs {
+        left: 70vw;
+    }
+
+
+    .booking_infoText {
+        font-size: 25px;
+    }
+    .booking_bewertung > p {
+        font-size: 25px;
+    }
+    .icon > img {
+        width: 4vw;
+    }
+}
+@media (max-width: 770px) {
+    nav {
+        height: auto;
+        top: 26vh;
+        margin: auto;
+    }
+    .navitem {
+        width: 24vw;
+        padding: 0;
+        margin: 0.5vw;
+    }
+    .navitem > p {
+        font-size: 15px;
+        margin: 2vh 1vh 2vh 1vh;
+    }
+    .navitem > img {
+        width: 5vw;
+    }
+    .current_Side {
+        width: 24vw;
+        top: 25.8vh;
+    }
+    #currentSide_Home {
+        left: 0.5vw;
+    }
+    #currentSide_Kurse {
+        left: 25.5vw;
+    }
+    #currentSide_Atemuebngen {
+        left: 50.5vw;
+    }
+    #currentSide_AboutUs {
+        left: 75.5vw;
+    }
+
+    h1 {
+        font-size: 80px;
+        text-align: center;
+    }
+    h2 {
+        font-size: 50px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    h4 {
+        font-size: 35px;
+    }
+    h6 {
+        font-size: 25px;
+    }
+
+    #rememberBox {
+        width: 90vw;
+    }
+
+    .yogaBox {
+        display: flex;
+        align-items: stretch;
+        flex-direction: column;
+        width: 100vw;
+        margin-top: 3vw;
+        background-color: var(--accent);
+    }
+    .yogaBox_left {
+        width: 90%;
+        padding: 2.5%;
+        padding-top: 0;
+        margin-left: 2vw;
+    }
+    .yogaBox_right {
+        width: 90%;
+    }
+    .yogaBox_text {
+        font-size: 20px;
+    }
+
+    .exercise-options {
+        flex-direction: column;
+    }
+    .exercise, .customize {
+        margin: 1vw;
+    }
+
+    .exercise_display > .instructions > span{
+        font-size: 20px;
+    }
+
+    #modeSwitch {
+        right: 2vh;
+        top: 2vh;
+        width: 8vh;
+    }
+
+    .booking_infoText {
+        font-size: 25px;
+    }
+    .booking_bewertung > p {
+        font-size: 25px;
+    }
+    .icon > img {
+        width: 4vw;
+    }
+}
+
+
+
+
+
+

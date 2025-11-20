@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <script src="../data/data.js" defer></script>
+    <script src="../javascript/booking.js" defer></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../javascript/forAllScript.js" defer></script>
+</head>
+<body>
+<header id="header">
+    <h1><span>B</span>OOKING</h1>
+</header>
+<nav>
+    <div class="navitem" onclick="window.location.href='../index.html'"><img id="homePNG" src="../img/home.png">
+        <p>Home</p></div>
+    <div class="navitem" onclick="window.location.href='./kurse.html'"><p>Unsere Kurse</p></div>
+    <div class="navitem" onclick="window.location.href='./atemuebungen.html'"><p>Atemübungen</p></div>
+    <div class="navitem" onclick="window.location.href='./aboutUs.html'"><p>About Us</p></div>
+</nav>
+
+<img id="modeSwitch" src="./img/dark.png" alt="modeSwitch" onclick="changeTheme()">
+
+<div id="booking_content">
+    <div class="container">
+        <div class="booking_infoText">
+            <p>Hatha Yoga ist eine Yogarichtung, die bereits seit Tausenden
+                von Jahren praktiziert wird. Bis heute ist sie die meist
+                verbreitete Yogaart weltweit. Beim Hatha Yoga werden
+                Körperübungen, die sogenannten Asanas, mit Atemübungen,
+                auch Pranayama genannt, kombiniert. <br><br>Hatha ist Wort
+                aus dem Sanskrit, eine altindische Gelehrtensprache.
+                Es bedeutet übersetzt Kraft. Entsprechend stehen beim
+                Hatha Yoga kräftigende Übungen im Fokus. In einer
+                klassischen Hatha Stunde wechselst du langsam zwischen
+                einzelnen Posen und stimmst deine Atmung auf die
+                kontrollierten Bewegungen ab. Auf eine Phase der
+                Anspannung folgt immer eine Sequenz der Entspannung.
+                Ziel ist die körperliche und mentale Ausgeglichenheit.
+                Hatha Yoga soll dir Stabilität geben und dir helfen,
+                deine Mitte zu finden.</p>
+        </div>
+        <div class="booking_stars">
+            <h4>Bewertung:</h4>
+            <div class="yogaBox_stars">
+                <div class="star" id="AloYogaStar1">.</div>
+                <div class="star" id="AloYogaStar2">.</div>
+                <div class="star" id="AloYogaStar3">.</div>
+                <div class="star" id="AloYogaStar4">.</div>
+                <div class="star" id="AloYogaStar5">.</div>
+            </div>
+        </div>
+        <div class="booking_bookALesson">.</div>
+        <div class="booking_bewertung">
+            <h4>Bewerte deine <span>Erfahrungen</span>:</h4>
+            <p>Falls du diesen Kurs bereits ausprobiert hast,
+                würden wir uns freuen, wenn du uns eine kleine Bewertung
+                mit Feedback hinterlassen könntest! <3</p>
+        </div>
+        <div class="booking_bewertungsBox">
+            <textarea id="text" name="text" cols="110" rows="20"></textarea>
+        </div>
+        <div class="booking_chooseDay">
+            <h3>Wähle den <span>Wochentag</span>:</h3>
+            <div class="align_radios_booking_choose">
+                <input type="radio" class="radios_booking_choose" id="montag" name="weekday" value="Montag">
+                <label class="radios_booking_choose" for="montag">Montag</label><br>
+
+                <input type="radio" class="radios_booking_choose" id="dienstag" name="weekday" value="Dienstag">
+                <label class="radios_booking_choose" for="dienstag">Dienstag</label><br>
+
+                <input type="radio" class="radios_booking_choose" id="freitag" name="weekday" value="Freitag">
+                <label class="radios_booking_choose" for="freitag">Freitag</label><br>
+
+                <input type="radio" class="radios_booking_choose" id="samstag" name="weekday" value="Samstag">
+                <label class="radios_booking_choose" for="samstag">Samstag</label>
+            </div>
+
+        </div>
+        <div class="booking_chooseTime">
+            <h3>Wähle die <span>Uhrzeit</span>:</h3>
+            <div class="align_radios_booking_choose">
+                <input type="radio" class="radios_booking_choose" id="time9" name="time" value="9:00">
+                <label class="radios_booking_choose" for="time9">9:00</label><br>
+
+                <input type="radio" class="radios_booking_choose" id="time11" name="time" value="11:00">
+                <label class="radios_booking_choose" for="dienstag">11:00</label><br>
+
+                <input type="radio" class="radios_booking_choose" id="time14" name="time" value="14:00">
+                <label class="radios_booking_choose" for="time14">14:00</label><br>
+
+                <input type="radio" class="radios_booking_choose" id="time17" name="time" value="17:00">
+                <label class="radios_booking_choose" for="time17">17:00</label>
+            </div>
+        </div>
+        <div onclick="goTo_submitALesson()" class="booking_commitNewLesson">Buchen</div>
+        <div class="booking_commitBewertung">Senden</div>
+    </div>
+</div>
+
+<div id="booking_detailOverlay">
+    <div id="booking_detailOverlay_detailBox">
+        <div>
+            <label for="uName"><h3>Gib deinen <span>Namen</span> hier ein:</h3></label>
+            <input type="text" name="userName" id="uName">
+        </div>
+        <div>
+            <h3>Möchtest du an den Termin <span>errinert</span> werden?</h3>
+        </div>
+        <div>
+            <input type="radio" class="radios_booking_remember" id="ja" name="remember" value="true">
+            <label class="radios_booking_remember" for="time9">Ja Bitte <3</label><br>
+        </div>
+        <div>
+            <input type="radio" class="radios_booking_remember" id="nein" name="remember" value="false">
+            <label class="radios_booking_remember" for="dienstag">Nein Danke :(</label><br>
+        </div>
+        <div>
+            <button onclick="submitALesson(0)" id="booking_detailOverlay_detailBox_SubmitButton" type="submit">Fertig</button>
+        </div>
+    </div>
+</div>
+<div onclick="remove()" id="alert"></div>
+<div id="toSmall">
+    <h3><span>Achtung: Der Bildschirm ist zu klein,
+        um diese Funktion ordnungsgemäß anzuzeigen.
+        Bitte vergrößern Sie das Fenster oder verwenden
+        Sie ein Gerät mit einem größeren Bildschirm,
+        um fortzufahren.</span></h3>
+</div>
+
+
+<footer>
+    <h5>CHECK US OUT</h5>
+    <div id="socialMedia_Icons">
+        <div class="icon"><img src="../img/Instagram_icon.png" alt="Insta"></div>
+        <div class="icon"><img src="../img/Facebook_icon.png" alt="facebook"></div>
+        <div class="icon"><img src="../img/Pinterest_icon.png" alt="pinterest"></div>
+        <div class="icon"><img src="../img/Twitter_icon.png" alt="twitter"></div>
+    </div>
+    <div id="websiteInformation">
+        <div class="differentInfos"><p>Impressum</p></div>
+        <div class="differentInfos"><p>Contact Us</p></div>
+        <div class="differentInfos"><p>Get Help</p></div>
+    </div>
+</footer>
+</body>
+</html>

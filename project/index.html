@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="./javascript/indexScript.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./javascript/forAllScriptIndex.js" defer></script>
+</head>
+<body id="index_htmlSide">
+    <header id="header">
+        <h1><span>Y</span>OGA PLACE</h1>
+    </header>
+    <div id="currentSide_Home" class="current_Side"></div>
+    <nav>
+        <div class="navitem"><img id="homePNG" src="./img/home.png">
+            <p>Home</p></div>
+        <div class="navitem" onclick="window.location.href='./html/kurse.html'"><p>Unsere Kurse</p></div>
+        <div class="navitem" onclick="window.location.href='./html/atemuebungen.html'"><p>Atemübungen</p></div>
+        <div class="navitem" onclick="window.location.href='./html/aboutUs.html'"><p>About Us</p></div>
+    </nav>
+
+    <img id="modeSwitch" src="./img/dark.png" alt="modeSwitch" onclick="changeTheme()">
+    
+    <div id="rememberBox">
+        <div class="personalRememberBox">
+            <p>Hallo ${lessons[i].uName}, <br>
+                Du hast am ${lessons[i].day} um ${lessons[i].time} eine Yogaklasse der im Stil des Hatha Yogas gebucht! <br>
+                <br> Wir wünschen dir viel Spaß ;)</p>
+
+            <div onclick="goToTaskLoeschen(1)" class="buttonToDeleteYogaClass">Löschen</div>
+        </div>
+    </div>
+    <div id="taskLoeschenOverlay">
+        <h3>Möchtest du diesen Termin wirklich löschen?</h3>
+        <div>
+            <div class="chooseButton_IndexSide" id="chooseButton_IndexSide_nein" onclick="taskLoeschen(1, 0)">NEIN</div>
+            <div class="chooseButton_IndexSide" onclick="taskLoeschen(1, 1)">JA</div>
+        </div>
+    </div>
+
+</body>
+</html>
