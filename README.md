@@ -29,6 +29,11 @@ Informieren kann.
 - Die Hintergrundbilder können gewechselt werden.
 ---
 
+## Figma Design
+
+https://www.figma.com/file/39O0uefOCuAjBpl4Pj7QLf/Untitled?type=design&node-id=0%3A1&mode=design&t=6kAITeBsYcT3EjSE-1
+
+
 ## Technologien
 
 Das Projekt basiert auf folgenden Webtechnologien:
