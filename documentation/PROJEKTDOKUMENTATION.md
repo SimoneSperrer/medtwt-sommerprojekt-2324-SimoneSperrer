@@ -1,10 +1,10 @@
 [//]: <> 
-(************************************
+************************************
 Name: Simone Sperrer
 Klasse: 2AHITM
 Projektname: Yoga Place
 Github: https://github.com/htl-leo-medtwt-projects/medtwt-sommerprojekt-2324-SimoneSperrer.git
-************************************)
+************************************
 
 # Projektdokumentation
 
